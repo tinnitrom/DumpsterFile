@@ -1,0 +1,230 @@
+/* h1, h2 {
+    text-align: center;
+    color: blue;
+}
+a {
+    text-align: center;
+    color: purple;
+}
+form {
+    text-align: center;
+    color: whitesmoke;
+}
+body { 
+    background-image: url("06bf7cbd8cafec83.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.test-global{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.test-container{
+    width: 40%;
+    height: 30%;
+    flex-direction: column;
+    background-image: linear-gradient(to right, rgb(221, 39, 212), rgb(216, 112, 211));
+    border: 10px dotted rgb(24, 86, 102);
+    border-radius: 30px;
+} */
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.test-global {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.test-container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="radio"] {
+    margin: 10px 0;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+} */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.test-container {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.answer-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #444;
+}
+
+input[type="radio"] {
+    accent-color: #007bff;
+    transform: scale(1.2);
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.authorization_container {
+    background-color: #ffffff;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.authorization_container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.authorization_container p {
+    margin: 10px 0 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.authorization_container input[type="text"],
+.authorization_container input[type="password"] {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.authorization_container input[type="text"]:focus,
+.authorization_container input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.authorization_container input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.authorization_container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.error p {
+    margin: 10px 0 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #be0404;
+}
+
+.result {
+    background-color: #ffffff;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.result h1 {
+    font-size: 16px;
+    font-weight: 500
+}
+
+.result h2 {
+    margin: 10px 0 10px;
+    font-size: 16px;
+    font-weight: 500
+}
+
+.result a {
+    font-size: 16px;
+    font-weight: 500
+}
+
