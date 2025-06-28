@@ -1,20 +1,27 @@
-<html> 
-    <head> 
-        <title>Authorizathion</title> 
-        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> 
-    </head> 
-    <body> 
-        <div class="authorization_container">
-            <form method="post">
-                
-
-                <p>Login</p>
-                <input type="text" name="login" value="{{request.form['login']}}">
-                <p>Password</p>
-                <input type="password" name="password" value="{{request.form['password']}}">
-                <input type="submit" value="Sign in">
-                <p>Don't have an account? <a href="{{ url_for('registration') }}">Sign in</a></p>
-            </form>
+<html>
+    <head>
+        <title>Authorization</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <div class = "container">
+            <div class="authorization_container">
+                <h1>Sign in to DumpsterFile</h1>
+                <form method="post">
+                    <p>Username</p>
+                    <input type="text" name="login" value="{{request.form['login']}}">
+                    
+                    <p>Password</p>
+                    <input type="password" name="password" value="{{request.form['password']}}">
+                    
+                    <input type="submit" value="Sign in">
+                    
+                    <div class="link_to_reg">
+                        <p>New to DumpsterFile? <a href="{{ url_for('registration') }}">Create an account</a></p>
+                    </div>
+                </form>
+            </div>
         </div>
-    </body> 
+    </body>
 </html>

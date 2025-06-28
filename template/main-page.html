@@ -1,0 +1,29 @@
+<html> 
+    <head> 
+        <title>Main page</title> 
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> 
+    </head> 
+    <body>
+        
+        <div class="main-page-forums-container">
+            <form method="post" class="create-forum-container">
+                <h3>Want to create forum?</h3>
+                <input type="text" name="create-forum-input">
+                <input type="submit" value="Create forum">
+                <p class = "error">{{error}}</p>
+            </form>
+            <div class="main-page-forums">
+                {% for id, name in forums %}
+                    <form action="{{ url_for('open_forum') }}" method="post">
+                        <input type="hidden" name="forum_id" value="{{ id }}">
+                        <input class="forum" type="submit" value="{{ name }}">
+                    </form>
+                {% endfor %}
+            </div>
+            
+            
+        </div>
+
+    </body> 
+</html>
